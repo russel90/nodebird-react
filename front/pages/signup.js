@@ -4,9 +4,9 @@ import { Form, Input, Checkbox, Button } from "antd";
 import AppLayout from "../components/AppLayout";
 
 const Signup = () => {
-  const [id, setId] = useState("");
-  const [nick, setNick] = useState("");
-  const [password, setPassword] = useState("");
+  // const [id, setId] = useState("");
+  // const [nick, setNick] = useState("");
+  // const [password, setPassword] = useState("");
   const [passwordCheck, setPasswordCheck] = useState("");
   const [term, setTerm] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
@@ -23,7 +23,7 @@ const Signup = () => {
   const [id, onChangeId] = useInput("");
   const [nick, onChangeNick] = useInput("");
   const [password, onChangePassword] = useInput("");
-  const [passwordCheck, onChangePasswordCheck] = useInput("");
+  // const [passwordCheck, onChangePasswordCheck] = useInput("");
 
   const onSubmit = e => {
     e.preventDefault();
@@ -44,6 +44,7 @@ const Signup = () => {
       term
     });
   };
+  /* 
   const onChangeId = e => {
     setId(e.traget.value);
   };
@@ -53,6 +54,7 @@ const Signup = () => {
   const onChangePassword = e => {
     setPassword(e.target.value);
   };
+  */
   const onChangePasswordCheck = e => {
     setPasswordCheck(e.target.value);
     setPasswordError(e.target.value !== password);
